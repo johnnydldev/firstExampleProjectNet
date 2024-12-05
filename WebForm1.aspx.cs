@@ -37,7 +37,7 @@ namespace PracticeNet
                 "xml/menu.xml";
 
             string xsltPath = ConfigurationManager.AppSettings["FileServer"].ToString() +
-                "xslt/template.xslt";
+                "xslt/StyledTemplate.xslt";
 
             XmlTextReader xmlTextReader = new XmlTextReader(xmlPath);
 
