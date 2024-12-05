@@ -107,6 +107,8 @@
     <Content Include="assets\img\testimonials\testimonials-3.jpg" />
     <Content Include="assets\img\testimonials\testimonials-4.jpg" />
     <Content Include="assets\img\testimonials\testimonials-5.jpg" />
+    <Content Include="assets\js\MyFileJS.js" />
+    <Content Include="assets\js\jquery-1.11.2.min.js" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\vendor\animate.css\animate.compat.css" />
     <Content Include="assets\vendor\animate.css\animate.css" />
@@ -155,11 +157,15 @@
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="xml\menu.xml" />
-    <Content Include="xslt\StyledTemplate.xslt" />
+    <Content Include="xslt\StyledTemplate.xslt">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="xslt\template.xslt">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="xslt\XSLTMasterTemplate.xslt" />
+    <Content Include="xslt\XSLTMasterTemplate.xslt">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

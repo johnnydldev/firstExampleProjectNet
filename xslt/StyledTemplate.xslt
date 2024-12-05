@@ -33,6 +33,11 @@
 
           <!-- Template Main CSS File -->
           <link href="assets/css/style.css" rel="stylesheet"></link>
+          
+          <!--JS Reference-->
+          <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+          <script type="text/javascript" src="assets/js/MyFileJS.js"></script>
+          
 
           <!-- =======================================================
   * Template Name: Restaurantly - v3.1.0
@@ -83,13 +88,13 @@
                   <xsl:for-each select="Opciones/Opcion">
                     <li>
                       <xsl:choose>
-                        <xsl:when test="@Id = 1">
-                          <a class="nav-link scrollto active" href="{@Url}">
+                        <xsl:when test="@Id = 0">
+                          <a class="nav-link scrollto active" href="#{@Texto}">
                             <xsl:value-of select="@Texto"/>
                           </a>
                         </xsl:when>
                         <xsl:otherwise>
-                          <a class="nav-link scrollto" href="{@Url}">
+                          <a class="nav-link scrollto" href="#{@Texto}">
                             <xsl:value-of select="@Texto"/>
                           </a>
                         </xsl:otherwise>
@@ -134,27 +139,7 @@
             </div>
           </section>
           <!-- End Hero -->
-          
-          <!-- ====== Choose Section =====-->
-         <!-- <xsl:choose>
-            <xsl:when test="$TipoMenu = 0">
-              <xsl:call-template name="Home"></xsl:call-template>
-            </xsl:when>
-            <xsl:when test="$TipoMenu = 1">
-              <xsl:call-template name="Carta"></xsl:call-template>
-            </xsl:when>
-            <xsl:when test="$TipoMenu = 2">
-              <xsl:call-template name="Contacto"></xsl:call-template>
-            </xsl:when>
-            <xsl:when test="$TipoMenu = 3">
-              <xsl:call-template name="PlayRoom"></xsl:call-template>
-            </xsl:when>
-            <xsl:otherwhise>
-              <xsl:call-template name="Home"></xsl:call-template>
-            </xsl:otherwhise>
-          </xsl:choose> -->
-
-          <!-- ====== End Choose Section =====-->
+         
 
           <main id="main">
 
@@ -198,7 +183,7 @@
             <!-- End About Section -->
 
             <!-- ======= Why Us Section ======= -->
-            <section id="why-us" class="why-us">
+            <section id="Platillos" class="why-us">
               <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -245,7 +230,7 @@
             <!-- End Why Us Section -->
 
             <!-- ======= Events Section ======= -->
-            <section id="events" class="events">
+            <section id="Especialidades" class="events">
               <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -334,13 +319,14 @@
             <!-- End Events Section -->
 
             <!-- ======= Specials Section ======= -->
-            <section id="specials" class="specials">
+            <section id="Bebidas" class="specials">
               <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
                   <h2>Specials</h2>
                   <p>Check Our Specials</p>
                 </div>
+                <!--End assign header section and title-->
 
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
 
@@ -361,9 +347,10 @@
                                 <xsl:value-of select="@Nombre"/>
                               </a>
                             </li>
+                            
                           </xsl:otherwise>
                         </xsl:choose>
-                        <!--End item nav list-->
+                        <!--End assign type item nav list-->
                       </xsl:for-each>
                       <!--End loop-->
                     </ul>
@@ -423,6 +410,256 @@
               
             </section>
             <!-- End Specials Section -->
+
+            <!-- ======= Menu Section ======= -->
+            <section id="Carta" class="menu section-bg">
+              <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                  <h2>Menu</h2>
+                  <p>Check Our Tasty Menu</p>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="menu-flters">
+                      <li data-filter="*" class="filter-active">All</li>
+                      <!--End first menu choose item-->
+
+                      <xsl:for-each select="Platillos/Tipo">
+                        <li data-filter=".filter-{@Nombre}">
+                          <xsl:value-of select="@Nombre"/>
+                        </li>
+                      </xsl:for-each>
+                      <!--End create menu choose items-->
+                      
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+                  <xsl:for-each select="Platillos/Tipo/Platillo">
+                    <div class="col-lg-6 menu-item filter-{../@Nombre}">
+                      <img src="{Imagen}" class="menu-img" alt="{Imagen}"></img>
+                      <div class="menu-content">
+                        <a href="#">
+                          <xsl:value-of select="@Nombre"/>
+                        </a>
+                        <span>
+                          <xsl:value-of select="Precio"/>
+                        </span>
+                      </div>
+                      <div class="menu-ingredients">
+                        <xsl:value-of select="Descripcion"/>
+                      </div>
+                    </div>
+                  </xsl:for-each>
+                  <!-- End create menu item by category-->
+
+                </div>
+
+              </div>
+            </section>
+            <!-- End Menu Section -->
+
+            <!-- ======= Contact Section ======= -->
+
+            <section class="contact" id="Contacto">
+              <div class="container" data-os="fade-up">
+                <div class="section-title">
+                  <h2>Contacto</h2>
+                  <p>Queremos conocerte</p>
+                </div>
+                <!--End header section-->
+              </div>
+
+              <div data-aos="fade-up">
+                <style>
+                  #map{
+                    border: 0;
+                    width: 100%;
+                    height: 350px;
+                  }
+                </style>
+                <div id="google-map">
+                  <div id="map"></div>
+                </div>
+                <text id="direccion">Direccion en calle ...</text>
+                <div class="col-lg-12 margin-bottom-30" id="street" style="height: 400px; width: 100%;"></div>
+              </div>
+
+              <!--Form Data-->
+              <div class="container" data-aos="fade-up">
+                
+                <div class="row mt-5">
+                  <!--Contact data-->
+                  <div class="col-lg-4">
+                    <div class="info">
+                      
+                      <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Direccion:</h4>
+                        <p>
+                          <xsl:value-of select="Datos/Direccion"/>
+                        </p>
+                      </div>
+
+                      <div class="open-hours">
+                        <i class="bi bi-clock"></i>
+                        <h4>Horarios:</h4>
+                       
+                          <xsl:for-each select="Datos/Horarios/Horario">
+                            <p>
+                              <xsl:value-of select="."/>
+                            </p>
+                          </xsl:for-each>
+                       
+                      </div>
+
+                      <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>
+                          <a herf="mailto:{Datos/Correo}">
+                            <xsl:value-of select="Datos/correo"/>
+                          </a>
+                        </p>
+                      </div>
+
+                      <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Telefono:</h4>
+                        <p>
+                          <xsl:value-of select="Datos/Telefono"/>
+                        </p>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                  <!--End Contact data-->
+                  
+                  <!--Form section-->
+                  <div class="col-lg-8 mt-5 mt-lg-0">
+                     
+                       <form action="#" method="post" role="form" class="php-email-form">
+                          <div class="row">
+                            
+                            <div class="col-lg-12 form-group">
+                              <input type="text" name="contact_name" class="form-control" id="contact_name" placeholder="Jonathan Delgado" required=""></input>
+                            </div>
+                            
+                            <div class="col-lg-12 form-group">
+                              <input type="email" name="contact_email" class="form-control" id="contact_email" placeholder="example@domain.com" required=""></input>
+                            </div>
+                            
+                          </div>
+                        
+                          
+                        <div class="row">
+                          
+                            <div class="col-md-6 form-group">
+                              <input type="number" name="contact_people" class="form-control" id="contact_people" placeholder="# de personas" required="true" max="8" min="1"></input>
+                            </div>
+                      
+                            <div class="col-md-6 form-group">
+                              <input type="number" name="contact_add" class="form-control" id="contact_add" placeholder="# personas adicionales" required="true" max="4" min="0"></input>
+                            </div>
+                     
+                        </div>
+                          
+                      <div class="row">
+                            
+                            <div class="col-md-6 form-group">
+                              <input type="date" name="contact_date" class="form-control" id="contact_date" required="true"></input>
+                            </div>
+                            
+                            <div class="col-md-6 form-group">
+                              <input type="time" name="contact_time" class="form-control" id="contact_time" required="true" max="19:00:00" min="08:00:00"></input>
+                            </div>
+                       </div>  
+                      
+                       <div class="row">
+                            
+                         <div class="col-md-6 form-group mt-3 mt-md-0">
+                              <output class="form-control" id="total" disable="true"></output>
+                         </div>
+                         
+                         <div class="text-center">
+                           <a class="book-a-table-btn" id="myButton" onClick="sent_form()">Presionar</a>  
+                         </div>
+                              
+                       </div> 
+                        
+                      
+                        </form>
+                  
+                  </div>
+                  <!--End form section-->
+                  
+                
+                
+                </div>
+              
+              </div>
+              <!--End form data-->
+
+              <script>
+                <![CDATA[
+                console.log("Hola desde el template de contacto");
+
+                $(document).ready(function(){
+                    console.log("Hola desde Jquery");
+                    
+                    var now = new Date(Date.now());
+
+                  //Recuperar el control contact_time
+                  var timeControl = document.querySelector('#contact_time'); 
+
+                  var hours = now.getHours();
+                  var minutes = now.getMinutes();
+
+                  //Imprimimos la información
+                  console.log("Now: "+now);
+                  console.log("The current hour is: "+hours+":"+minutes);
+                  console.log("Time control is: "+timeControl);
+                  
+                  hours = (hours < 10)? "0"+hours : hours;
+                  minutes = (minutes < 10)? "0"+minutes : minutes;
+
+                  var formatted = hours+":"+minutes;
+
+                  timeControl.value = formatted;
+
+                  console.log("Formatted time is: "+formatted);
+
+                  //$('#contact_time').attr("value",formatted);
+
+
+                  day = now.getDate();
+                  month = now.getMonth()+1;
+                  year = now.getFullYear();
+
+                  day = (day < 10)? "0"+day : day;
+                  month = (month < 10)? "0"+month : month;
+
+                  var formattedDate = year+"-"+month+"-"+day;
+
+                  console.log("Formatted Date is: "+formattedDate);
+
+                  $('#contact_date').attr("value", formattedDate);
+                  //$('#contact_date').attr("min", formattedDate);
+          
+                });
+                
+                ]]>
+                
+              </script>
+              
+            </section>
+            
+            <!-- ======= End Contact Section ======= -->
             
           </main>
           <!-- End #main -->
@@ -562,7 +799,11 @@
 
           <!-- Template Main JS File -->
           <script src="assets/js/main.js"></script>
-
+          
+         <!--JS Reference-->
+          <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+          <script type="text/javascript" src="assets/js/MyFileJS.js"></script>
+        
         </body>
 
       </html>

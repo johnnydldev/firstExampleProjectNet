@@ -5,7 +5,30 @@
     <xsl:output method="xml" indent="yes"/>
   
   <!-- Main Template-->
-  <xsl:param name="TipoMenu" select="TypeMenu"></xsl:param>
+  <xsl:param name="TipoMenu" select="TypeMenu">
+    
+    <!-- ====== Choose Section =====-->
+    <!--<xsl:choose>
+      <xsl:when test="$TipoMenu = 0">
+        <xsl:call-template name="Home"></xsl:call-template>
+      </xsl:when>
+      <xsl:when test="$TipoMenu = 1">
+        <xsl:call-template name="Carta"></xsl:call-template>
+      </xsl:when>
+      <xsl:when test="$TipoMenu = 2">
+        <xsl:call-template name="Contacto"></xsl:call-template>
+      </xsl:when>
+      <xsl:when test="$TipoMenu = 3">
+        <xsl:call-template name="PlayRoom"></xsl:call-template>
+      </xsl:when>
+    </xsl:choose>
+    -->
+
+    <!-- ====== End Choose Section =====-->
+  </xsl:param>
+  
+ 
+  
     <xsl:template name="Home">
       <h1>Hola desde Home</h1>
     </xsl:template>
