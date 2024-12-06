@@ -6,8 +6,8 @@
     <Opcion Url="/WebForm1.aspx?Id=1" Texto="Bebidas" Id="2"></Opcion>
     <Opcion Url="/WebForm1.aspx?Id=1" Texto="Carta" Id="3"></Opcion>
     <Opcion Url="/WebForm1.aspx?Id=1" Texto="Especialidades" Id="4"></Opcion>
-		<Opcion Url="/WebForm1.aspx?Id=2" Texto="Contacto" Id="5"></Opcion>
-		<Opcion Url="/WebForm1.aspx?Id=3" Texto="Play Room" Id="6"></Opcion>
+    <Opcion Url="/WebForm1.aspx?Id=2" Texto="Contacto" Id="5"></Opcion>
+    <Opcion Url="/WebForm1.aspx?Id=2" Texto="PlayRoom" Id="6"></Opcion>
 	</Opciones>
 
 	<Platillos>

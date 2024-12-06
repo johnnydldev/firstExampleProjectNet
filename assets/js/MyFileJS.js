@@ -1,4 +1,4 @@
-﻿console.log("Hola desde MyFileJS");
+﻿//console.log("Hola desde MyFileJS");
 
 //Validar la Fecha y Hora
 
@@ -19,13 +19,20 @@ function time() {
 var currentTime = time();
 console.log("The current time is: "+currentTime);
 
-//const dateItem = document.querySelector('#contact_date');
 
-$('#contact_date').attr('min', currentDate);
 
-const dateItem = document.getElementsByClassName('contact_date');
+ const dateItem = document.querySelector('#contact_date');
+ console.log("The item date is: " + dateItem);
 
-console.log("The item date is: " + dateItem);
+
+
+
+//$('#contact_date').attr('value', currentDate);
+//$('#contact_date').attr('min', currentDate);
+
+//const dateItem = document.getElementsByClassName('contact_date');
+
+//console.log("The item length is: "+dateItem.length);
 
 
 

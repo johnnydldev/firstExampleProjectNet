@@ -90,6 +90,6 @@
   <xsl:template name="PlayRoom">
     <h1>Hola desde PlayRoom</h1>
   </xsl:template>
-  
-  
+
+ 
 </xsl:stylesheet>

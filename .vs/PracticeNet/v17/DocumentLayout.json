@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|c:\\users\\johnnydl\\documents\\cursos\\tr network\\practicenet\\assets\\js\\myfilejs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|solutionrelative:assets\\js\\myfilejs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|c:\\users\\johnnydl\\documents\\cursos\\tr network\\practicenet\\xslt\\styledtemplate.xslt||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|solutionrelative:xslt\\styledtemplate.xslt||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|c:\\users\\johnnydl\\documents\\cursos\\tr network\\practicenet\\assets\\js\\draganddrop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|solutionrelative:assets\\js\\draganddrop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xslt\\xsltmastertemplate.xslt||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|solutionrelative:xslt\\xsltmastertemplate.xslt||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|c:\\users\\johnnydl\\documents\\cursos\\tr network\\practicenet\\assets\\css\\draganddrop.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|solutionrelative:assets\\css\\draganddrop.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xml\\menu.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|solutionrelative:webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xslt\\template.xslt||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5C948B4F-A4CA-45D5-B6D8-83DB46FBC4BB}|PracticeNet.csproj|solutionrelative:xslt\\template.xslt||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,30 +34,43 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MyFileJS.js",
-              "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\assets\\js\\MyFileJS.js",
-              "RelativeDocumentMoniker": "assets\\js\\MyFileJS.js",
-              "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\assets\\js\\MyFileJS.js",
-              "RelativeToolTip": "assets\\js\\MyFileJS.js",
-              "ViewState": "AgIAABQAAAAAAAAAAAAiwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-05T18:39:40.53Z",
+              "DocumentIndex": 3,
+              "Title": "DragAndDrop.css",
+              "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\assets\\css\\DragAndDrop.css",
+              "RelativeDocumentMoniker": "assets\\css\\DragAndDrop.css",
+              "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\assets\\css\\DragAndDrop.css",
+              "RelativeToolTip": "assets\\css\\DragAndDrop.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-06T17:41:58.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "DragAndDrop.js",
+              "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\assets\\js\\DragAndDrop.js",
+              "RelativeDocumentMoniker": "assets\\js\\DragAndDrop.js",
+              "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\assets\\js\\DragAndDrop.js",
+              "RelativeToolTip": "assets\\js\\DragAndDrop.js",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-06T17:41:38.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "WebForm1.aspx.cs",
               "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\WebForm1.aspx.cs",
               "RelativeDocumentMoniker": "WebForm1.aspx.cs",
               "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\WebForm1.aspx.cs",
               "RelativeToolTip": "WebForm1.aspx.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwDEAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAiwDUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T16:03:11.181Z",
               "EditorCaption": ""
@@ -70,48 +83,36 @@
               "RelativeDocumentMoniker": "xslt\\XSLTMasterTemplate.xslt",
               "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xslt\\XSLTMasterTemplate.xslt",
               "RelativeToolTip": "xslt\\XSLTMasterTemplate.xslt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003586|",
               "WhenOpened": "2024-12-04T15:50:42.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StyledTemplate.xslt",
               "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xslt\\StyledTemplate.xslt",
               "RelativeDocumentMoniker": "xslt\\StyledTemplate.xslt",
               "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xslt\\StyledTemplate.xslt",
               "RelativeToolTip": "xslt\\StyledTemplate.xslt",
-              "ViewState": "AgIAAB4DAAAAAAAAAAAUwCQDAABOAAAAAAAAAA==",
+              "ViewState": "AgIAANQCAAAAAAAAAAAgwNgCAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003586|",
               "WhenOpened": "2024-12-04T15:18:59.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "menu.xml",
               "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xml\\menu.xml",
               "RelativeDocumentMoniker": "xml\\menu.xml",
               "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xml\\menu.xml",
               "RelativeToolTip": "xml\\menu.xml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2024-12-04T14:13:19.76Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "template.xslt",
-              "DocumentMoniker": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xslt\\template.xslt",
-              "RelativeDocumentMoniker": "xslt\\template.xslt",
-              "ToolTip": "C:\\Users\\JohnnyDL\\Documents\\Cursos\\TR Network\\PracticeNet\\xslt\\template.xslt",
-              "RelativeToolTip": "xslt\\template.xslt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003586|",
-              "WhenOpened": "2024-12-03T20:39:27.619Z"
             }
           ]
         }
